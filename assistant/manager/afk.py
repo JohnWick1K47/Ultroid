@@ -102,7 +102,7 @@ async def make_change(event):
             name = get_display_name(entity)
             res_ = s_der["reason"]
             time_ = time_formatter((dt.now() - s_der["time"]).seconds * 1000)
-            msg = f"**{name}** Boss is AFK Currently!\n**From :** {time_}"
+            msg = f"**{name}** is AFK Currently!\n**From :** {time_}"
             if res_ and isinstance(res_, str):
                 msg += f"\n**Reason :** {res_}"
             elif res_ and isinstance(res_, Message):
