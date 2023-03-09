@@ -39,7 +39,7 @@ SUP_BUTTONS = [
 
 ofox = "https://graph.org/file/231f0049fcd722824f13b.jpg"
 gugirl = "https://graph.org/file/0df54ae4541abca96aa11.jpg"
-ultpic = "https://graph.org/file/042624eca9cd070738d65.jpg"
+ultpic = "https://graph.org/file/3f4535d97b2179e8d36ce.jpg"
 
 apis = [
     "QUl6YVN5QXlEQnNZM1dSdEI1WVBDNmFCX3c4SkF5NlpkWE5jNkZV",
