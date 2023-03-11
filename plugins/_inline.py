@@ -82,7 +82,7 @@ async def inline_alive(o):
         RES,
         private=True,
         cache_time=300,
-        switch_pm="👥 ULTROID PORTAL",
+        switch_pm="👥 @JohnWick1K47 PORTAL",
         switch_pm_param="start",
     )
 
