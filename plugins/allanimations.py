@@ -3,7 +3,7 @@ import random
 from . import *
 from collections import deque
 
-DEFAULTUSER = "@JohnWick1K47"
+DEFAULTUSER = "JohnWick1K47"
 
 M = ("___________ \n"
 "　　　　　| \n"
