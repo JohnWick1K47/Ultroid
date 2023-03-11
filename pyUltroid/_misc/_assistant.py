@@ -31,7 +31,7 @@ MSG = f"""
 IN_BTTS = [
     [
         Button.url(
-            "Repository",
+            "Master 👨‍💻",
             url="t.me/JohnWick1K47",
         ),
         Button.url("Support", url="https://t.me/JohnWick1K47"),
