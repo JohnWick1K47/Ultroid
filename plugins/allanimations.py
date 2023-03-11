@@ -3,7 +3,7 @@ import random
 from . import *
 from collections import deque
 
-DEFAULTUSER = "[John Wick](https:t.me/JohnWick1K47)"
+DEFAULTUSER = "@JohnWick1K47"
 
 M = ("___________ \n"
 "　　　　　| \n"
@@ -1040,7 +1040,7 @@ async def snku(ult):
         "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
         "🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴\n🔵🔵🔵⬜⬜⬜🔴🔴🔴",
         "🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵\n🔴🔴🔴⬜⬜⬜🔵🔵🔵",
-        f"{DEFAULTUSER} **Police iz Here**",
+        "[John Wick](https:t.me/JohnWick1K47)" **Police iz Here**",
     ]
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
