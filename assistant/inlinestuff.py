@@ -172,7 +172,7 @@ async def repo(e):
             title="John Wick AI 🤖",
             description="Userbot | Telethon",
             thumb=wb(ultpic, 0, "image/jpeg", []),
-            text="• **John Wick AI 🤖** •",
+            text="• **Master @JohnWick1K47** •",
             buttons=SUP_BUTTONS,
         ),
     ]
