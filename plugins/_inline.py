@@ -50,8 +50,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/TeamUltroid/Ultroid"),
-        Button.url("• Support •", url="t.me/UltroidSupportChat"),
+        Button.url("• Master •", url="https://t.me/JohnWick1K47"),
+        Button.url("• Support •", url="t.me/JohnWick1K47"),
     ],
 ]
 
@@ -60,10 +60,10 @@ SUP_BUTTONS = [
 
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
-    TLINK = inline_pic() or "https://graph.org/file/74d6259983e0642923fdb.jpg"
-    MSG = "• **Ultroid Userbot •**"
+    TLINK = inline_pic() or "https://graph.org/file/3f4535d97b2179e8d36ce.jpg"
+    MSG = "• **John Wick AI 🤖 •**"
     WEB0 = InputWebDocument(
-        "https://graph.org/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
+        "https://graph.org/file/3f4535d97b2179e8d36ce.jpg", 0, "image/jpg", []
     )
     RES = [
         await o.builder.article(
@@ -71,8 +71,8 @@ async def inline_alive(o):
             text=MSG,
             include_media=True,
             buttons=SUP_BUTTONS,
-            title="Ultroid Userbot",
-            description="Userbot | Telethon",
+            title="John Wick AI 🤖",
+            description="Assistant | Telethon",
             url=TLINK,
             thumb=WEB0,
             content=InputWebDocument(TLINK, 0, "image/jpg", []),
@@ -82,7 +82,7 @@ async def inline_alive(o):
         RES,
         private=True,
         cache_time=300,
-        switch_pm="👥 ULTROID PORTAL",
+        switch_pm="👥 @JohnWick1K47 PORTAL",
         switch_pm_param="start",
     )
 
@@ -195,7 +195,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© @TeamUltroid"
+    help_ += "\n© @JohnWick1K47"
     buttons = []
     if inline_pic():
         data = f"sndplug_{key}_{file}"
@@ -398,9 +398,9 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="Ultroid Op",
+                            title="@JohnWick1K47 Op",
                             text=txt,
-                            description="@TeamUltroid",
+                            description="@JohnWick1K47",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -413,10 +413,10 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="Ultroid Op",
+                        title="@JohnWick1K47 Op",
                         type=_type,
                         text=txt,
-                        description="@TeamUltroid",
+                        description="@JohnWick1K47",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
@@ -428,7 +428,7 @@ async def ibuild(e):
         except Exception as er:
             LOGS.exception(er)
     result = [
-        await builder.article("Ultroid Op", text=txt, link_preview=False, buttons=btn)
+        await builder.article("@JohnWick1K47 Op", text=txt, link_preview=False, buttons=btn)
     ]
     await e.answer(result)
 
