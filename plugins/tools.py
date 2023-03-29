@@ -364,7 +364,7 @@ async def lastname(steal):
                 respond = await conv.get_response()
                 responds = await conv.get_response()
             except YouBlockedUserError:
-                return await lol.edit("Please unblock @sangmatainfo_bot and try again")
+                return await lol.edit("Please unblock @SangMata_BOT and try again")
             if (
                 (response and response.text == "No records found")
                 or (respond and respond.text == "No records found")
