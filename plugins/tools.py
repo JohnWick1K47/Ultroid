@@ -353,7 +353,7 @@ async def lastname(steal):
         user_id = message.sender_id
     else:
         return await steal.eor("`Use this command with reply or give Username/id...`")
-    chat = "@SangMataInfo_bot"
+    chat = "@SangMata_BOT"
     id = f"/search_id {user_id}"
     lol = await steal.eor(get_string("com_1"))
     try:
@@ -386,7 +386,7 @@ async def lastname(steal):
                 [msg.id, responds.id, respond.id, response.id],
             )
     except AsyncTimeout:
-        await lol.edit("Error: @SangMataInfo_bot is not responding!.")
+        await lol.edit("Error: @SangMata_BOT is not responding!.")
 
 
 @ultroid_cmd(pattern="webshot( (.*)|$)")
