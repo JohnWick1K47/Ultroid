@@ -372,10 +372,10 @@ async def lastname(steal):
             ):
                 await lol.edit("No records found for this user")
                 await steal.client.delete_messages(conv.chat_id, [msg.id, response.id])
-            elif response.text.startswith("History"):
+            elif response.text.startswith("Usernames"):
                 await lol.edit(respond.message)
                 await lol.reply(responds.message)
-            elif respond.text.startswith("History"):
+            elif respond.text.startswith("Usernames."):
                 await lol.edit(response.message)
                 await lol.reply(responds.message)
             else:
