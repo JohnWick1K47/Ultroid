@@ -457,7 +457,7 @@ async def abs_rmbg(event):
     zz = Image.open(out)
     if zz.mode != "RGB":
         zz.convert("RGB")
-    wbn = check_filename("@JohnWick1K47-rmbg.webp")
+    wbn = check_filename("@JohnWick1K47.webp")
     zz.save(wbn, "webp")
     await event.client.send_file(
         event.chat_id,
