@@ -445,7 +445,7 @@ async def abs_rmbg(event):
         Image.open(dl).save(file)
         os.remove(dl)
         dl = file
-    xx = await event.eor("`Sending to remove.bg`")
+    xx = await event.eor("`Sending to John Wick Server`")
     dn, out = await ReTrieveFile(dl)
     os.remove(dl)
     if not dn:
@@ -457,7 +457,7 @@ async def abs_rmbg(event):
     zz = Image.open(out)
     if zz.mode != "RGB":
         zz.convert("RGB")
-    wbn = check_filename("ult-rmbg.webp")
+    wbn = check_filename("@JohnWick1K47-rmbg.webp")
     zz.save(wbn, "webp")
     await event.client.send_file(
         event.chat_id,
