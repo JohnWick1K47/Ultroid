@@ -353,8 +353,8 @@ async def lastname(steal):
         user_id = message.sender_id
     else:
         return await steal.eor("`Use this command with reply or give Username/id...`")
-    chat = "@SangMata_BOT"
-    id = f"/search_id {user_id}"
+    chat = "@SangMata_beta_bot"
+    id = f" {user_id}"
     lol = await steal.eor(get_string("com_1"))
     try:
         async with steal.client.conversation(chat) as conv:
@@ -364,7 +364,7 @@ async def lastname(steal):
                 respond = await conv.get_response()
                 responds = await conv.get_response()
             except YouBlockedUserError:
-                return await lol.edit("Please unblock @SangMata_BOT and try again")
+                return await lol.edit("Please unblock @SangMata_beta_bot and try again")
             if (
                 (response and response.text == "No data available")
                 or (respond and respond.text == "No data available")
@@ -372,10 +372,10 @@ async def lastname(steal):
             ):
                 await lol.edit("No data available for this user")
                 await steal.client.delete_messages(conv.chat_id, [msg.id, response.id])
-            elif response.text.startswith("@"):
+            elif response.text.startswith("1."):
                 await lol.edit(respond.message)
                 await lol.reply(responds.message)
-            elif respond.text.startswith("@"):
+            elif respond.text.startswith("1."):
                 await lol.edit(response.message)
                 await lol.reply(responds.message)
             else:
@@ -386,7 +386,7 @@ async def lastname(steal):
                 [msg.id, responds.id, respond.id, response.id],
             )
     except AsyncTimeout:
-        await lol.edit("Error: @SangMata_BOT is not responding!.")
+        await lol.edit("Error: bot is not responding!.")
 
 
 @ultroid_cmd(pattern="webshot( (.*)|$)")
