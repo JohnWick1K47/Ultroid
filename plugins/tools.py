@@ -364,18 +364,18 @@ async def lastname(steal):
                 respond = await conv.get_response()
                 responds = await conv.get_response()
             except YouBlockedUserError:
-                return await lol.edit("Please unblock @SangMata_beta_bot and try again")
+                return await lol.edit("Please unblock bot and try again")
             if (
-                (response and response.text == "No data available")
-                or (respond and respond.text == "No data available")
-                or (responds and responds.text == "No data available")
+                (response and response.text == "No records found")
+                or (respond and respond.text == "No records found")
+                or (responds and responds.text == "No records found")
             ):
-                await lol.edit("No data available for this user")
+                await lol.edit("No records found for this user")
                 await steal.client.delete_messages(conv.chat_id, [msg.id, response.id])
-            elif response.text.startswith("1."):
+            elif response.text.startswith("🔗"):
                 await lol.edit(respond.message)
                 await lol.reply(responds.message)
-            elif respond.text.startswith("1."):
+            elif respond.text.startswith("🔗"):
                 await lol.edit(response.message)
                 await lol.reply(responds.message)
             else:
